@@ -81,12 +81,25 @@ public class BuildingRepositoryImpl implements BuildingRepositoryCustom{
 		if(buildingSearchBuilder.getStaffid() != null) {
 			sql.append(" and assignmentcustomer.staffid = "+buildingSearchBuilder.getStaffid());
 		};
+        
 		if(buildingSearchBuilder.getRentPriceFrom() != null) {
 			sql.append(" and building.rentprice >= "+buildingSearchBuilder.getRentPriceFrom());
 		};
 		if(buildingSearchBuilder.getRentPriceTo() != null) {
 			sql.append(" and building.rentprice <= "+buildingSearchBuilder.getRentPriceTo());
 		};
+//		Long rentAreaTo=buildingSearchBuilder.getAreaTo();
+//		Long rentAreaFrom=buildingSearchBuilder.getAreaFrom();
+//		if(rentAreaTo !=null || rentAreaFrom !=null) {
+//			sql.append(" AND EXISTS (SECLECT * FROM rentarea where building.id=rentarea.id ");
+//			if(rentAreaFrom !=null) {
+//				sql.append(" And rentarea.value >= "+rentAreaFrom);
+//			}
+//			if(rentAreaTo != null) {
+//				sql.append(" And rentarea.value <="+ rentAreaTo);
+//			}
+//			sql.append(") ");
+//		}
 		if(buildingSearchBuilder.getAreaFrom() != null) {
 			sql.append(" and rentarea.value >= "+buildingSearchBuilder.getAreaFrom());
 		};
