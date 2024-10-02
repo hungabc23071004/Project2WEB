@@ -33,7 +33,8 @@ public class BuildingAPI {
 	
 	@PersistenceContext
 	private EntityManager entityManager;
-	
+    
+//	tim kiem
 	@GetMapping(value = "/api/building/")
 	public Object getBuilding(@RequestParam HashMap<String,Object> building,
 								@RequestParam(value="typeCode",required = false) List<String> type) {

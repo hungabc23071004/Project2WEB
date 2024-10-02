@@ -35,22 +35,22 @@ public class BuildingEntity {
 	
 
 	@Column(name="numberofbasement")
-	private Long numberofbasement;
+	private Long numberOfBasement;
 	
 	@Column(name="managername")
-	private String managername;
+	private String managerName;
 	
 	@Column(name="managerphonenumber")
-	private String managerphonenumber;
+	private String managerPhoneNumber;
 	
 	@Column(name="floorarea")
-	private Long floorarea;
+	private Long floorArea;
 	
 	@Column(name="rentprice")
-	private Long rentprice;
+	private Long rentPrice;
 	
 	@Column(name="servicefee")
-	private Long servicefee;
+	private Long serviceFee;
 	
 //	@Column(name="brokeragefee")
 //	private Long brokeragefee;
@@ -96,40 +96,40 @@ public class BuildingEntity {
 	}
 	
 	public Long getNumberofbasement() {
-		return numberofbasement;
+		return numberOfBasement;
 	}
 	public void setNumberofbasement(Long numberofbasement) {
-		this.numberofbasement = numberofbasement;
+		this.numberOfBasement = numberofbasement;
 	}
 	public String getManagername() {
-		return managername;
+		return managerName;
 	}
 	public void setManagername(String managername) {
-		this.managername = managername;
+		this.managerName = managername;
 	}
 	public String getManagerphonenumber() {
-		return managerphonenumber;
+		return managerPhoneNumber;
 	}
 	public void setManagerphonenumber(String managerphonenumber) {
-		this.managerphonenumber = managerphonenumber;
+		this.managerPhoneNumber = managerphonenumber;
 	}
 	public Long getFloorarea() {
-		return floorarea;
+		return floorArea;
 	}
 	public void setFloorarea(Long floorarea) {
-		this.floorarea = floorarea;
+		this.floorArea = floorarea;
 	}
 	public Long getRentprice() {
-		return rentprice;
+		return rentPrice;
 	}
 	public void setRentprice(Long rentprice) {
-		this.rentprice = rentprice;
+		this.rentPrice = rentprice;
 	}
 	public Long getServicefee() {
-		return servicefee;
+		return serviceFee;
 	}
 	public void setServicefee(Long servicefee) {
-		this.servicefee = servicefee;
+		this.serviceFee = servicefee;
 	}
 //	public Long getBrokeragefee() {
 //		return brokeragefee;

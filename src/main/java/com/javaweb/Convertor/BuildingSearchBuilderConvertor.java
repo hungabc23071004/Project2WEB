@@ -10,18 +10,20 @@ import com.javaweb.builder.BuildingSearchBuilder;
 import com.javaweb.utils.MapUtil;
 
 @Component
+
+//CHUYEN DU LIEU TU FORNTEND SANG OBJECT DE TIEN CHO VIEC DUYET DU LIEU
 public class BuildingSearchBuilderConvertor {
 	public static BuildingSearchBuilder toBuildingSearchBuilder(HashMap<String,Object> building,List<String> type) {
 		BuildingSearchBuilder buidingSearchBuilder = new BuildingSearchBuilder.Builder()
 																	.setName(MapUtil.getObject(building, "name", String.class))
-																	.setFloorarea(MapUtil.getObject(building, "floorarea", Long.class)) 
+																	.setFloorarea(MapUtil.getObject(building, "floorArea", Long.class)) 
 																	.setWard(MapUtil.getObject(building, "ward", String.class))
 																	.setStreet (MapUtil.getObject(building, "street", String.class))
 																	.setDistrictid (MapUtil.getObject(building, "districtId", String.class)) 
-																	.setNumberofbasement (MapUtil.getObject (building, "numberofBasement", Integer.class)) 
+																	.setNumberofbasement (MapUtil.getObject (building, "numberOfBasement", Integer.class)) 
 																	.setTypecode(type)
 																	.setManagername (MapUtil.getObject(building, "managerName", String.class))
-																	.setManagerphonenumber(MapUtil.getObject(building, "managerphoneNumber", String.class)) 
+																	.setManagerphonenumber(MapUtil.getObject(building, "managerPhoneNumber", String.class)) 
 																	.setPriceTo(MapUtil.getObject(building, "rentPriceTo", Long.class))
 																	.setPriceFrom(MapUtil.getObject(building, "rentPriceFrom", Long.class))
 																	.setAreaFrom(MapUtil.getObject(building, "areaFrom", Long.class))

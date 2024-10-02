@@ -21,6 +21,7 @@ public class BuildingConvertor {
 	@Autowired
 	private ModelMapper modelMapper;
 	
+	//FILTER ENTITY SANG DTO, CAC BIEN TRUNG TEN SE DC CHUYEN GIAO DU LIEU SANG
 	public BuildingDTO buildingConvertor(BuildingEntity item){
 		BuildingDTO bd = modelMapper.map(item , BuildingDTO.class);
 		bd.setAddress(item.getStreet()+", "+item.getWard()+", "+item.getDistrict().getName());

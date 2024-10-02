@@ -1,5 +1,5 @@
 package com.javaweb.model;
-
+//LUU TRU KET QUA CUA CLIENT
 public class BuildingDTO {
 	private String name;
 	private String address;

@@ -2,18 +2,18 @@ package com.javaweb.builder;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//tao object luu yeu cau cua frontend
 public class BuildingSearchBuilder {
 
 	private String name;
-	private Long floorarea;
+	private Long floorArea;
 	private String ward;
 	private String street;
-	private String districtid;
-	private Integer numberofbasement;
-	private List<String> typecode = new ArrayList<>();
-	private String managername;
-	private String managerphonenumber;
+	private String districtId;
+	private Integer numberOfBasement;
+	private List<String> typeCode = new ArrayList<>();
+	private String managerName;
+	private String managerPhoneNumber;
 	private Long rentPriceFrom;
 	private Long rentPriceTo;
 	private Long areaFrom;
@@ -22,14 +22,14 @@ public class BuildingSearchBuilder {
 
 	private BuildingSearchBuilder (Builder builder){ 
 		this.name = builder.name; 
-		this.floorarea = builder.floorarea;
+		this.floorArea = builder.floorArea;
 		this.ward = builder.ward;
 		this.street = builder.street;
-		this.districtid = builder.districtid; 
-		this.numberofbasement = builder.numberofbasement;
-		this.typecode = builder.typecode;
-		this.managername = builder.managername;
-		this.managerphonenumber = builder.managerphonenumber;
+		this.districtId = builder.districtId; 
+		this.numberOfBasement = builder.numberOfBasement;
+		this.typeCode = builder.typeCode;
+		this.managerName = builder.managerName;
+		this.managerPhoneNumber = builder.managerPhoneNumber;
 		this.rentPriceFrom = builder.rentPriceFrom;
 		this.rentPriceTo = builder.rentPriceTo;
 		this.areaFrom = builder.areaFrom;
@@ -42,7 +42,7 @@ public class BuildingSearchBuilder {
 	}
 
 	public Long getFloorarea() {
-		return floorarea;
+		return floorArea;
 	}
 
 	public String getWard() {
@@ -54,23 +54,23 @@ public class BuildingSearchBuilder {
 	}
 
 	public String getDistrictid() {
-		return districtid;
+		return districtId;
 	}
 
 	public Integer getNumberofbasement() {
-		return numberofbasement;
+		return numberOfBasement;
 	}
 
 	public List<String> getTypecode() {
-		return typecode;
+		return typeCode;
 	}
 
 	public String getManagername() {
-		return managername;
+		return managerName;
 	}
 
 	public String getManagerphonenumber() {
-		return managerphonenumber;
+		return managerPhoneNumber;
 	}
 
 	public Long getRentPriceFrom() {
@@ -95,14 +95,14 @@ public class BuildingSearchBuilder {
 
 	public static class Builder {
 		private String name;
-		private Long floorarea;
+		private Long floorArea;
 		private String ward;
 		private String street;
-		private String districtid;
-		private Integer numberofbasement;
-		private List<String> typecode = new ArrayList<>();
-		private String managername;
-		private String managerphonenumber;
+		private String districtId;
+		private Integer numberOfBasement;
+		private List<String> typeCode = new ArrayList<>();
+		private String managerName;
+		private String managerPhoneNumber;
 		private Long rentPriceFrom;
 		private Long rentPriceTo;
 		private Long areaFrom;
@@ -115,7 +115,7 @@ public class BuildingSearchBuilder {
 		}
 
 		public Builder setFloorarea(Long floorarea) {
-			this.floorarea = floorarea;
+			this.floorArea = floorarea;
 			return this;
 		}
 
@@ -130,27 +130,27 @@ public class BuildingSearchBuilder {
 		}
 
 		public Builder setDistrictid(String districtid) {
-			this.districtid = districtid;
+			this.districtId = districtid;
 			return this;
 		}
 
 		public Builder setNumberofbasement(Integer numberofbasement) {
-			this.numberofbasement = numberofbasement;
+			this.numberOfBasement = numberofbasement;
 			return this;
 		}
 
 		public Builder setTypecode(List<String> typecode) {
-			this.typecode = typecode;
+			this.typeCode = typecode;
 			return this;
 		}
 
 		public Builder setManagername(String managername) {
-			this.managername = managername;
+			this.managerName = managername;
 			return this;
 		}
 
 		public Builder setManagerphonenumber(String managerphonenumber) {
-			this.managerphonenumber = managerphonenumber;
+			this.managerPhoneNumber = managerphonenumber;
 			return this;
 		}
 
